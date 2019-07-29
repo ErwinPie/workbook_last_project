@@ -1,0 +1,126 @@
+body {
+    background-color: black;
+}
+
+.App {
+    background-color: #fff;
+}
+.thumbnail-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav {
+    border-bottom: 1px solid grey;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #30bfb3;
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+.nav-menu li {
+    display: inline-block;
+}
+
+.nav-menu__link {
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid lightgray;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.nav-menu__link:hover {
+    border: 1px solid black;
+    background-color: rgb(228, 228, 228);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.nav-menu__link.active {
+    background-color: rgb(77, 43, 131);
+    color: #fff;
+}
+
+.back {
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid lightgray;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background-color: rgb(149, 216, 238);
+    text-decoration: none;
+}
+
+.main-content {
+    max-width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.main-content h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.book-container {
+    display: inline-block;
+    text-align: center;
+}
+
+.book-image {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer {
+    background-color: #30bfb3;
+ }
+
+.profile-image {
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+}
+
+.button-help {
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+}
+.button-help:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0; right: 0; bottom: 5px; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: rgba(0,42,167,0.6); /* Полупрозрачный цвет фона */
+    color: #fff; /* Цвет текста */
+    text-align: center; /* Выравнивание текста по центру */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 11px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid #333; /* Параметры рамки */
+}
